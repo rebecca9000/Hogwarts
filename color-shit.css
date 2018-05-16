@@ -1,0 +1,30 @@
+            a {
+                color: blue
+            }
+
+            a:hover {
+                background-color: mediumblue;
+                color: white;
+                text-decoration: solid
+            }
+
+            a:active {
+                background-color: grey;
+            }
+
+            p {
+                font-family: 'Pacific';
+                line-height: 30px;
+                padding: 5px;
+            }
+
+
+            ul {
+                font-style: italic;
+                list-style-type: square;
+            }
+
+            h4 {
+                text-align: center;
+                color: black;
+            }
