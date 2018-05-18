@@ -85,7 +85,7 @@
 
 
                 <center>
-                    <input class="btn btn-success" value="Submit" type="button" onclick="LogIn()" />
+                    <input class="btn btn-success" value="Submit" type="button" id="LogIn" />
                 </center>
 
 
@@ -100,22 +100,19 @@
 
 
         <script type="text/javascript">
-            function LogIn() {
+            $(document).ready(function () {
+
                 var name = "Alana Bennet";
                 var password = "cookie";
 
-                var enteredname = document.forms["my_form"]["form_name"].value;
-                var enteredpassword = document.forms["my_form"]["form_password"].value;
-
-
-                if (enteredname == name && enteredpassword == password) {
-                    window.location.href = "second.html";
-                } else {
-                    alert("Incorrect Username or Password");
-                }
-
-
-            }
+                $("#LogIn").click(function () {
+                    if ($("#form_name").val() == name && $("#form_password").val() == password )  {
+                        window.location.href = "second.html";
+                    } else {
+                        alert("Incorrect Username or Password");
+                    }
+                });
+            });
         </script>
 
 </body>
